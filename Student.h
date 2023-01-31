@@ -7,7 +7,8 @@
 using namespace std;
 
 //学生类
-class Student : public  Identity{
+class Student : public Identity{
+public:
     //默认构造
     Student();
     //有参构造
@@ -22,5 +23,6 @@ class Student : public  Identity{
     void showAllOrder();
     //取消预约
     void cancelOrder();
+
 
 };

@@ -11,7 +11,7 @@ Teacher::Teacher(int empId, string name, string pwd) {
 
 }
 
-void Teacher::openMune() {
+void Teacher::openMenu() {
 
 }
 

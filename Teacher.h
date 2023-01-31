@@ -14,7 +14,7 @@ public:
     //有参构造
     Teacher(int empId, string name, string pwd);
     //菜单
-    virtual void openMune();
+    virtual void openMenu();
     //查看所有预约
     void showAllOrder();
     //审核预约
