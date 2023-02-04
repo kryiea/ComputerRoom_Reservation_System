@@ -123,7 +123,7 @@ void LoginIN(string fileName, int type){
                 cout << "老师登录认证成功！" << endl;
                 system("pause");
                 system("cls");
-                //person = new Teacher(id, name, pwd);
+                person = new Teacher(id, name, pwd);
                 //进入老师身份子菜单
                 return;
 
