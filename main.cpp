@@ -11,10 +11,10 @@ using namespace std;
 //进入管理员子菜单界面
 void managerMenu(Identity * &manager){
 
+
     while (true){
         //调用管理员子菜单
         manager->openMenu();
-
         //父类指针 转为子类指针，调用子类里其他接口
         Manager * man = (Manager*)manager;
 
@@ -49,9 +49,10 @@ void managerMenu(Identity * &manager){
             //销毁
             delete manager; //销毁堆区对象
             cout << "注销成功" << endl;
-            system("pause");
+            //
+            // system("pause");
             system("cls");
-
+            return;
         }
 
     }
@@ -141,6 +142,8 @@ void LoginIN(string fileName, int type){
                 system("cls");
                 person = new Manager(name, pwd);
                 //进入股管理员身份子菜单
+                managerMenu(person);
+
                 return;
 
             }
